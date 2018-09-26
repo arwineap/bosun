@@ -1,5 +1,6 @@
 FROM golang:1-alpine
 
+
 RUN apk add --update git make gcc libc-dev && \
     rm -rf /var/cache/apk/* && \
     go get bosun.org/cmd/bosun && \
